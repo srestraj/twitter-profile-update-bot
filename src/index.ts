@@ -33,7 +33,7 @@ async function grabGithubData(): Promise<string> {
 async function main() {
   const ans = await grabGithubData();
   const params = {
-    description: 'GitHub Contributions Presented by a 🤖✌ | Last Updated at ' + new Date().toLocaleString(),
+    description: 'GitHub Contributions Presented by a 🤖✌ | Last Updated on ' + new Date().toLocaleString(),
     location: ans
   };
   
